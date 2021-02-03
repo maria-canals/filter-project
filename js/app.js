@@ -6,8 +6,8 @@ const App = {
       }
     },
     methods : {
-        aplicarFiltro(tipoDulce) {
-            this.filtroActivo = tipoDulce
+        aplicarFiltro(event) {
+            this.filtroActivo = event.target.dataset.filter
         },
         mustShowItem(tipoDulce) {
             if(this.filterText){
